@@ -1,10 +1,8 @@
 package com.example.albinafaceapp.viewmodels
 
-import android.content.ContentValues
 import android.graphics.*
 import android.media.ExifInterface
 import android.os.Environment
-import android.util.Log
 import com.example.albinafaceapp.application.FaceApp
 import com.microsoft.projectoxford.face.contract.Face
 import java.io.File
