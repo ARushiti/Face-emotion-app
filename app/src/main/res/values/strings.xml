@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">AlbinaFaceApp</string>
+    <string name="take_photo">Take photo</string>
 </resources>
