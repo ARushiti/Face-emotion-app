@@ -20,7 +20,7 @@ import androidx.core.content.FileProvider
 import androidx.core.net.toUri
 import androidx.lifecycle.ViewModelProvider
 import coil.load
-import com.example.albinafaceapp.Constants
+import com.example.albinafaceapp.utilities.Constants
 import com.example.albinafaceapp.databinding.ActivityMainBinding
 import com.example.albinafaceapp.viewmodels.FaceImageHelper
 import com.example.albinafaceapp.viewmodels.MainViewModel
@@ -94,7 +94,6 @@ class MainActivity : AppCompatActivity() {
         super.onRequestPermissionsResult(requestCode, permissions, grantResults)
         if (requestCode == Constants.REQUEST_CODE_PERMISSIONS) {
             if (allPermissionGranted()) {
-                // startCamera()
             } else {
                 Toast.makeText(this, "Permissions not granted by the user.", Toast.LENGTH_SHORT)
                     .show()
@@ -149,7 +148,6 @@ class MainActivity : AppCompatActivity() {
             .withPermission(Manifest.permission.CAMERA)
             .withListener(object : PermissionListener {
                 override fun onPermissionGranted(p0: PermissionGrantedResponse?) {
-                    //    dispatchTakePictureIntent()
                     showDialogForCamera()
 
                 }

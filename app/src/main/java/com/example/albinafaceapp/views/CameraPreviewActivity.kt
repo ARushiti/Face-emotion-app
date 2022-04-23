@@ -13,7 +13,7 @@ import androidx.camera.core.ImageCaptureException
 import androidx.camera.core.Preview
 import androidx.camera.lifecycle.ProcessCameraProvider
 import androidx.core.content.ContextCompat
-import com.example.albinafaceapp.Constants
+import com.example.albinafaceapp.utilities.Constants
 import com.example.albinafaceapp.R
 import com.example.albinafaceapp.databinding.CameraPreviewBinding
 import java.io.File
